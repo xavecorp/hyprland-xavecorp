@@ -31,7 +31,7 @@ present_terminal() {
 
 edit_in_nvim() {
   notify-send "Editing config file" "$1"
-  kitty -e nvim "$1"
+  kitty -e nano "$1"
 }
 
 install() {
@@ -57,11 +57,11 @@ aur_install_and_launch() {
 show_learn_menu() {
   case $(menu "Learn" "  Keybindings\n  Xavecorp\n  Hyprland\n󰣇  Arch\n  Neovim\n󱆃  Bash") in
   *Keybindings*) xavecorp-menu-keybindings ;;
-  *Xavecorp*) xavecorp-launch-webapp "https://learn.omacom.io/2/the-xavecorp-manual" ;;
+  #*Xavecorp*) xavecorp-launch-webapp "https://learn.omacom.io/2/the-xavecorp-manual" ;;
   *Hyprland*) xavecorp-launch-webapp "https://wiki.hypr.land/" ;;
   *Arch*) xavecorp-launch-webapp "https://wiki.archlinux.org/title/Main_page" ;;
   *Bash*) xavecorp-launch-webapp "https://devhints.io/bash" ;;
-  *Neovim*) xavecorp-launch-webapp "https://www.lazyvim.org/keymaps" ;;
+  #*Neovim*) xavecorp-launch-webapp "https://www.lazyvim.org/keymaps" ;;
   *) show_main_menu ;;
   esac
 }
@@ -71,7 +71,7 @@ show_style_menu() {
   *Theme*) show_theme_menu ;;
   *Font*) show_font_menu ;;
   *Background*) xavecorp-theme-bg-next ;;
-  *Screensaver*) edit_in_nvim ~/.config/xavecorp/branding/screensaver.txt ;;
+  #*Screensaver*) edit_in_nvim ~/.config/xavecorp/branding/screensaver.txt ;;
   *About*) edit_in_nvim ~/.config/xavecorp/branding/about.txt ;;
   *) show_main_menu ;;
   esac
@@ -194,15 +194,15 @@ show_install_menu() {
   *Development*) show_install_development_menu ;;
   *Editor*) show_install_editor_menu ;;
   *AI*) show_install_ai_menu ;;
-  *Gaming*) show_install_gaming_menu ;;
+  #*Gaming*) show_install_gaming_menu ;;
   *) show_main_menu ;;
   esac
 }
 
 show_install_service_menu() {
   case $(menu "Install" "  Dropbox\n  Tailscale") in
-  *Dropbox*) present_terminal xavecorp-install-dropbox ;;
-  *Tailscale*) present_terminal xavecorp-install-tailscale ;;
+  #*Dropbox*) present_terminal xavecorp-install-dropbox ;;
+  #*Tailscale*) present_terminal xavecorp-install-tailscale ;;
   *) show_install_menu ;;
   esac
 }
@@ -211,9 +211,9 @@ show_install_editor_menu() {
   case $(menu "Install" "  VSCode\n  Cursor [AUR]\n  Zed\n  Sublime Text\n  Helix") in
   *VSCode*) install_and_launch "VSCode" "visual-studio-code-bin" "code" ;;
   *Cursor*) aur_install_and_launch "Cursor" "cursor-bin" "cursor" ;;
-  *Zed*) install_and_launch "Zed" "zed" "dev.zed.Zed" ;;
-  *Sublime*) install_and_launch "Sublime Text" "sublime-text-4" "sublime_text" ;;
-  *Helix*) install "Helix" "helix" ;;
+  #*Zed*) install_and_launch "Zed" "zed" "dev.zed.Zed" ;;
+  #*Sublime*) install_and_launch "Sublime Text" "sublime-text-4" "sublime_text" ;;
+  #*Helix*) install "Helix" "helix" ;;
   *) show_install_menu ;;
   esac
 }
@@ -230,14 +230,14 @@ show_install_ai_menu() {
   esac
 }
 
-show_install_gaming_menu() {
-  case $(menu "Install" "  Steam\n  RetroArch [AUR]\n󰍳  Minecraft") in
-  *Steam*) present_terminal xavecorp-install-steam ;;
-  *RetroArch*) aur_install_and_launch "RetroArch" "retroarch retroarch-assets libretro libretro-fbneo" "com.libretro.RetroArch.desktop" ;;
-  *Minecraft*) install_and_launch "Minecraft" "minecraft-launcher" "minecraft-launcher" ;;
-  *) show_install_menu ;;
-  esac
-}
+#show_install_gaming_menu() {
+#  case $(menu "Install" "  Steam\n  RetroArch [AUR]\n󰍳  Minecraft") in
+#  *Steam*) present_terminal xavecorp-install-steam ;;
+#  *RetroArch*) aur_install_and_launch "RetroArch" "retroarch retroarch-assets libretro libretro-fbneo" "com.libretro.RetroArch.desktop" ;;
+#  *Minecraft*) install_and_launch "Minecraft" "minecraft-launcher" "minecraft-launcher" ;;
+#  *) show_install_menu ;;
+#  esac
+#}
 
 show_install_style_menu() {
   case $(menu "Install" "󰸌  Theme\n  Background\n  Font") in

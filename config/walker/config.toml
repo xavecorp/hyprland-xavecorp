@@ -39,12 +39,12 @@ hidden = true
 
 [[builtins.bookmarks.entries]]
 label = "Xavecorp - Github"
-url = "https://github.com/basecamp/xavecorp"
+url = "https://github.com/xavecorp/hyprland-xavecorp"
 keywords = ["xavecorp", "github"]
 
 [[builtins.bookmarks.entries]]
 label = "Xavecorp Manual"
-url = "https://manuals.omamix.org/2/the-xavecorp-manual"
+url = "https://github.com/xavecorp/hyprland-xavecorp"
 keywords = ["xavecorp"]
 
 [builtins.calc]
