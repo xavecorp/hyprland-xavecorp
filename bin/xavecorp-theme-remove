@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# xavecorp-theme-remove: Remove a theme from Omarchy by name
+# xavecorp-theme-remove: Remove a theme from Xavecorp by name
 # Usage: xavecorp-theme-remove <theme-name>
 
 if [ -z "$1" ]; then

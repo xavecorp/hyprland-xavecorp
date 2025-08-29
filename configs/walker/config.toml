@@ -38,12 +38,12 @@ hide_category = true
 hidden = true
 
 [[builtins.bookmarks.entries]]
-label = "Omarchy - Github"
+label = "Xavecorp - Github"
 url = "https://github.com/basecamp/xavecorp"
 keywords = ["xavecorp", "github"]
 
 [[builtins.bookmarks.entries]]
-label = "Omarchy Manual"
+label = "Xavecorp Manual"
 url = "https://manuals.omamix.org/2/the-xavecorp-manual"
 keywords = ["xavecorp"]
 

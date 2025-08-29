@@ -1,5 +1,5 @@
 #!/bin/bash
 
-echo -e "\e[32mUpdate Omarchy\e[0m"
+echo -e "\e[32mUpdate Xavecorp\e[0m"
 git -C $XAVECORP_PATH pull --autostash
 git -C $XAVECORP_PATH diff --check || git -C $XAVECORP_PATH reset --merge

@@ -1,4 +1,4 @@
 #!/bin/bash
 
 cmd="$*"
-setsid kitty --class Omarchy -e bash -c "xavecorp-show-logo; $cmd; xavecorp-show-done"
+setsid kitty --class Xavecorp -e bash -c "xavecorp-show-logo; $cmd; xavecorp-show-done"

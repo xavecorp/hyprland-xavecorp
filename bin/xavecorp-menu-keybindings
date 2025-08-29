@@ -6,7 +6,7 @@
 # Fetch dynamic keybindings from Hyprland
 #
 # Also do some pre-processing:
-# - Remove standard Omarchy bin path prefix
+# - Remove standard Xavecorp bin path prefix
 # - Remove uwsm prefix
 # - Map numeric modifier key mask to a textual rendition
 # - Output comma-separated values that the parser can understand

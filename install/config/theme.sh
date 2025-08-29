@@ -11,7 +11,7 @@ for f in ~/.local/share/xavecorp/themes/*; do ln -nfs "$f" ~/.config/xavecorp/th
 # Set initial theme
 mkdir -p ~/.config/xavecorp/current
 ln -snf ~/.config/xavecorp/themes/xavecorp ~/.config/xavecorp/current/theme
-ln -snf ~/.config/xavecorp/current/theme/backgrounds/1-scenery-pink-lakeside-sunset-lake-landscape-scenic-panorama-7680x3215-144.png ~/.config/xavecorp/current/background
+ln -snf ~/.config/xavecorp/current/theme/backgrounds/cat_lofi_cafe.jpg ~/.config/xavecorp/current/background
 
 # Set specific app links for current theme
 mkdir -p ~/.config/btop/themes

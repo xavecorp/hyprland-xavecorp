@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# xavecorp-theme-install: Install a new theme from a git repo for Omarchy
+# xavecorp-theme-install: Install a new theme from a git repo for Xavecorp
 # Usage: xavecorp-theme-install <git-repo-url>
 
 if [ -z "$1" ]; then

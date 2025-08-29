@@ -22,7 +22,7 @@ menu() {
 }
 
 terminal() {
-  kitty --class Omarchy -e "$@"
+  kitty --class Xavecorp -e "$@"
 }
 
 present_terminal() {
@@ -55,9 +55,9 @@ aur_install_and_launch() {
 }
 
 show_learn_menu() {
-  case $(menu "Learn" "  Keybindings\n  Omarchy\n  Hyprland\n󰣇  Arch\n  Neovim\n󱆃  Bash") in
+  case $(menu "Learn" "  Keybindings\n  Xavecorp\n  Hyprland\n󰣇  Arch\n  Neovim\n󱆃  Bash") in
   *Keybindings*) xavecorp-menu-keybindings ;;
-  *Omarchy*) xavecorp-launch-webapp "https://learn.omacom.io/2/the-xavecorp-manual" ;;
+  *Xavecorp*) xavecorp-launch-webapp "https://learn.omacom.io/2/the-xavecorp-manual" ;;
   *Hyprland*) xavecorp-launch-webapp "https://wiki.hypr.land/" ;;
   *Arch*) xavecorp-launch-webapp "https://wiki.archlinux.org/title/Main_page" ;;
   *Bash*) xavecorp-launch-webapp "https://devhints.io/bash" ;;
@@ -315,8 +315,8 @@ show_remove_menu() {
 }
 
 show_update_menu() {
-  case $(menu "Update" " Omarchy\n  Config\n󰸌  Themes\n  Process\n  Timezone") in
-  *Omarchy*) present_terminal xavecorp-update ;;
+  case $(menu "Update" " Xavecorp\n  Config\n󰸌  Themes\n  Process\n  Timezone") in
+  *Xavecorp*) present_terminal xavecorp-update ;;
   *Config*) show_update_config_menu ;;
   *Themes*) present_terminal xavecorp-theme-update ;;
   *Process*) show_update_process_menu ;;
@@ -381,7 +381,7 @@ go_to_menu() {
   *install*) show_install_menu ;;
   *remove*) show_remove_menu ;;
   *update*) show_update_menu ;;
-  *about*) kitty --class Omarchy -o font.size=9 -e bash -c 'fastfetch; read -n 1 -s' ;;
+  *about*) kitty --class Xavecorp -o font.size=9 -e bash -c 'fastfetch; read -n 1 -s' ;;
   *system*) show_system_menu ;;
   esac
 }
