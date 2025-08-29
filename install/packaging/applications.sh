@@ -1,6 +1,6 @@
 #!/bin/bash
 
-yay -S --nocleanmenu --nodiffmenu \
+yay -S --noprovides --answerdiff None --answerclean None \
     brave-bin \
     proton-mail-bin \
     visual-studio-code-bin \
