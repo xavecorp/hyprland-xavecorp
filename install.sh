@@ -18,6 +18,7 @@ source $XAVECORP_INSTALL/preflight/first-run-mode.sh
 echo
 echo
 echo "  ==> Start packages config"
+echo
 source $XAVECORP_INSTALL/packages.sh
 source $XAVECORP_INSTALL/packaging/fonts.sh
 source $XAVECORP_INSTALL/packaging/zsh.sh
@@ -29,6 +30,7 @@ source $XAVECORP_INSTALL/packaging/webapps.sh
 echo
 echo
 echo "  ==> Start default config"
+echo
 source $XAVECORP_INSTALL/config/config.sh
 source $XAVECORP_INSTALL/config/theme.sh
 source $XAVECORP_INSTALL/config/gpg.sh
@@ -50,13 +52,14 @@ source $XAVECORP_INSTALL/config/hardware/ignore-power-button.sh
 
 #source $XAVECORP_INSTALL/config/branding.sh
 #source $XAVECORP_INSTALL/config/git.sh
-source $XAVECORP_INSTALL/config/mimetypes.sh
+#source $XAVECORP_INSTALL/config/mimetypes.sh
 #source $XAVECORP_INSTALL/config/hardware/nvidia.sh
 
 # Login
 echo
 echo
 echo "  ==> Start login config"
+echo
 source $XAVECORP_INSTALL/login/plymouth.sh
 source $XAVECORP_INSTALL/login/limine-snapper.sh
 source $XAVECORP_INSTALL/login/alt-bootloaders.sh
