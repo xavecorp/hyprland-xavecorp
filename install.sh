@@ -25,7 +25,7 @@ source $XAVECORP_INSTALL/packaging/webapps.sh
 # Configuration
 source $XAVECORP_INSTALL/config/config.sh
 source $XAVECORP_INSTALL/config/theme.sh
-source $XAVECORP_INSTALL/config/branding.sh
+#source $XAVECORP_INSTALL/config/branding.sh
 #source $XAVECORP_INSTALL/config/git.sh
 source $XAVECORP_INSTALL/config/gpg.sh
 source $XAVECORP_INSTALL/config/timezones.sh
