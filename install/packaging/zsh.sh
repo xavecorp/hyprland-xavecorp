@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ -d "$HOME/.oh-my-zsh" ] then
+if [ -d "$HOME/.oh-my-zsh" ]; then
     rm -rf "$HOME/.oh-my-zsh"
 fi
 
