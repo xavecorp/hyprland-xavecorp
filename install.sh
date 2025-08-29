@@ -15,7 +15,9 @@ source $XAVECORP_INSTALL/preflight/repositories.sh
 source $XAVECORP_INSTALL/preflight/first-run-mode.sh
 
 # Packaging
-echo "\n\n ==> Start packages config"
+echo
+echo
+echo "  ==> Start packages config"
 source $XAVECORP_INSTALL/packages.sh
 source $XAVECORP_INSTALL/packaging/fonts.sh
 source $XAVECORP_INSTALL/packaging/zsh.sh
@@ -24,15 +26,17 @@ source $XAVECORP_INSTALL/packaging/applications.sh
 source $XAVECORP_INSTALL/packaging/webapps.sh
 
 # Configuration
-echo "\n\n ==> Start default config"
+echo
+echo
+echo "  ==> Start default config"
 source $XAVECORP_INSTALL/config/config.sh
 source $XAVECORP_INSTALL/config/theme.sh
 #source $XAVECORP_INSTALL/config/branding.sh
 #source $XAVECORP_INSTALL/config/git.sh
 source $XAVECORP_INSTALL/config/gpg.sh
-#source $XAVECORP_INSTALL/config/timezones.sh
-#source $XAVECORP_INSTALL/config/increase-sudo-tries.sh
-#source $XAVECORP_INSTALL/config/increase-lockout-limit.sh
+source $XAVECORP_INSTALL/config/timezones.sh
+source $XAVECORP_INSTALL/config/increase-sudo-tries.sh
+source $XAVECORP_INSTALL/config/increase-lockout-limit.sh
 #source $XAVECORP_INSTALL/config/ssh-flakiness.sh
 #source $XAVECORP_INSTALL/config/detect-keyboard-layout.sh
 #source $XAVECORP_INSTALL/config/xcompose.sh
@@ -49,7 +53,9 @@ source $XAVECORP_INSTALL/config/gpg.sh
 #source $XAVECORP_INSTALL/config/hardware/nvidia.sh
 
 # Login
-echo "\n\n ==> Start login config"
+echo
+echo
+echo "  ==> Start login config"
 source $XAVECORP_INSTALL/login/plymouth.sh
 source $XAVECORP_INSTALL/login/limine-snapper.sh
 source $XAVECORP_INSTALL/login/alt-bootloaders.sh
