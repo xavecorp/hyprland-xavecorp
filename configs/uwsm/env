@@ -1,0 +1,7 @@
+export XAVECORP_PATH=$HOME/.local/share/xavecorp
+export PATH=$XAVECORP_PATH/bin/:$PATH
+export TERMINAL=kitty
+
+if command -v mise &> /dev/null; then
+  eval "$(mise activate bash)"
+fi

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+xavecorp-refresh-config hypr/hyprsunset.conf
+xavecorp-restart-hyprsunset

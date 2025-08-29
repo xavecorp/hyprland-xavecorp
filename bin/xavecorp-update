@@ -1,0 +1,10 @@
+#!/bin/bash
+
+set -e
+
+xavecorp-snapshot create || [ $? -eq 127 ]
+xavecorp-update-git
+xavecorp-migrate
+xavecorp-update-system-pkgs
+xavecorp-update-restart
+xavecorp-restart-waybar # removes update-available icon

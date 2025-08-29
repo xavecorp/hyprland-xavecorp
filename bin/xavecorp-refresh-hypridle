@@ -1,0 +1,4 @@
+#!/bin/bash
+
+xavecorp-refresh-config hypr/hypridle.conf
+xavecorp-restart-hypridle

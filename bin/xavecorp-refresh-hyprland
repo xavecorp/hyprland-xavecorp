@@ -1,0 +1,7 @@
+#!/bin/bash
+
+xavecorp-refresh-config hypr/autostart.conf
+xavecorp-refresh-config hypr/bindings.conf
+xavecorp-refresh-config hypr/envs.conf
+xavecorp-refresh-config hypr/input.conf
+xavecorp-refresh-config hypr/hyprland.conf

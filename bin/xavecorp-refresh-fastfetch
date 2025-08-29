@@ -1,0 +1,3 @@
+#!/bin/bash
+
+xavecorp-refresh-config fastfetch/config.jsonc

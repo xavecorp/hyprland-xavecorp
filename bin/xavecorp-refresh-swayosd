@@ -1,0 +1,5 @@
+#!/bin/bash
+
+xavecorp-refresh-config swayosd/config.toml
+xavecorp-refresh-config swayosd/style.css
+xavecorp-restart-swayosd

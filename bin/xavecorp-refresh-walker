@@ -1,0 +1,4 @@
+#!/bin/bash
+
+xavecorp-refresh-config walker/config.toml
+xavecorp-restart-walker

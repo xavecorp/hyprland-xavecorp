@@ -1,0 +1,5 @@
+#!/bin/bash
+
+xavecorp-refresh-config waybar/config.jsonc
+xavecorp-refresh-config waybar/style.css
+xavecorp-restart-waybar
