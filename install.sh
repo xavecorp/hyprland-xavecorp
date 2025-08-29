@@ -62,9 +62,9 @@ source $XAVECORP_INSTALL/login/limine-snapper.sh
 source $XAVECORP_INSTALL/login/alt-bootloaders.sh
 
 # Reboot
-#clear
+clear
 echo
 echo "You're done! So we're ready to reboot now..." | tte --frame-rate 640 wipe
 
 sleep 5
-#reboot
+reboot
