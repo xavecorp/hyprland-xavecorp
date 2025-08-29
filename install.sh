@@ -40,7 +40,7 @@ source $XAVECORP_INSTALL/config/detect-keyboard-layout.sh
 source $XAVECORP_INSTALL/config/xcompose.sh
 source $XAVECORP_INSTALL/config/mise-ruby.sh
 source $XAVECORP_INSTALL/config/docker.sh
-#source $XAVECORP_INSTALL/config/mimetypes.sh
+source $XAVECORP_INSTALL/config/mimetypes.sh
 #source $XAVECORP_INSTALL/config/localdb.sh
 #source $XAVECORP_INSTALL/config/hardware/network.sh
 #source $XAVECORP_INSTALL/config/hardware/fix-fkeys.sh
@@ -62,7 +62,7 @@ source $XAVECORP_INSTALL/login/limine-snapper.sh
 source $XAVECORP_INSTALL/login/alt-bootloaders.sh
 
 # Reboot
-clear
+#clear
 echo
 echo "You're done! So we're ready to reboot now..." | tte --frame-rate 640 wipe
 
