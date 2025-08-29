@@ -1,0 +1,6 @@
+[Desktop Entry]
+Hidden=true
+Name=OpenVPN
+Exec=openvpn %f
+Type=Application
+MimeType=application/x-openvpn-profile;

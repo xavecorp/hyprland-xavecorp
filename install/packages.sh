@@ -125,6 +125,7 @@ sudo pacman -S --noconfirm --needed \
   woff2-font-awesome \
   xdg-desktop-portal-gtk \
   xdg-desktop-portal-hyprland \
+  xdg-utils \
   xmlstarlet \
   xournalpp \
   yaru-icon-theme \

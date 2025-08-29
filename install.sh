@@ -52,7 +52,7 @@ source $XAVECORP_INSTALL/config/hardware/ignore-power-button.sh
 
 #source $XAVECORP_INSTALL/config/branding.sh
 #source $XAVECORP_INSTALL/config/git.sh
-#source $XAVECORP_INSTALL/config/mimetypes.sh
+source $XAVECORP_INSTALL/config/mimetypes.sh
 #source $XAVECORP_INSTALL/config/hardware/nvidia.sh
 
 # Login
@@ -70,4 +70,4 @@ echo
 echo "You're done! So we're ready to reboot now..." | tte --frame-rate 640 wipe
 
 sleep 5
-reboot
+systemctl reboot

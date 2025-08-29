@@ -3,6 +3,8 @@
 xavecorp-refresh-applications
 update-desktop-database ~/.local/share/applications
 
+xdg-mime default openvpn.desktop application/x-openvpn-profile
+
 # Open all images with imv
 xdg-mime default imv.desktop image/png
 xdg-mime default imv.desktop image/jpeg
