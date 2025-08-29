@@ -40,18 +40,18 @@ source $XAVECORP_INSTALL/config/detect-keyboard-layout.sh
 source $XAVECORP_INSTALL/config/xcompose.sh
 source $XAVECORP_INSTALL/config/mise-ruby.sh
 source $XAVECORP_INSTALL/config/docker.sh
-source $XAVECORP_INSTALL/config/mimetypes.sh
-#source $XAVECORP_INSTALL/config/localdb.sh
-#source $XAVECORP_INSTALL/config/hardware/network.sh
-#source $XAVECORP_INSTALL/config/hardware/fix-fkeys.sh
-#source $XAVECORP_INSTALL/config/hardware/bluetooth.sh
-#source $XAVECORP_INSTALL/config/hardware/printer.sh
-#source $XAVECORP_INSTALL/config/hardware/usb-autosuspend.sh
-#source $XAVECORP_INSTALL/config/hardware/ignore-power-button.sh
-#source $XAVECORP_INSTALL/config/hardware/nvidia.sh
+source $XAVECORP_INSTALL/config/localdb.sh
+source $XAVECORP_INSTALL/config/hardware/network.sh
+source $XAVECORP_INSTALL/config/hardware/fix-fkeys.sh
+source $XAVECORP_INSTALL/config/hardware/bluetooth.sh
+source $XAVECORP_INSTALL/config/hardware/printer.sh
+source $XAVECORP_INSTALL/config/hardware/usb-autosuspend.sh
+source $XAVECORP_INSTALL/config/hardware/ignore-power-button.sh
 
 #source $XAVECORP_INSTALL/config/branding.sh
 #source $XAVECORP_INSTALL/config/git.sh
+#source $XAVECORP_INSTALL/config/mimetypes.sh
+#source $XAVECORP_INSTALL/config/hardware/nvidia.sh
 
 # Login
 echo
