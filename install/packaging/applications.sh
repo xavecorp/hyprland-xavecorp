@@ -1,10 +1,14 @@
 #!/bin/bash
 
+# Install default
 yay -S --noconfirm \
     1password \
     1password-cli \
     brave-bin \
-    proton-mail-bin \
     visual-studio-code-bin \
     slack-desktop \
     yubico-authenticator-bin
+
+# Activate Yubico Authenticator
+sudo pacman -R yubikey-personalization
+sudo systemctl start pcscd.service

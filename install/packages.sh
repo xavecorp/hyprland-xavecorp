@@ -69,12 +69,15 @@ sudo pacman -S --noconfirm --needed \
   mpv \
   nano \
   nautilus \
+  networkmanager \
+  networkmanager-openvpn \
   noto-fonts \
   noto-fonts-cjk \
   noto-fonts-emoji \
   noto-fonts-extra \
   nss-mdns \
   obsidian \
+  openvpn \
   oryx \
   pamixer \
   pinta \

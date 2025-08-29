@@ -50,7 +50,7 @@ source $XAVECORP_INSTALL/config/hardware/ignore-power-button.sh
 
 #source $XAVECORP_INSTALL/config/branding.sh
 #source $XAVECORP_INSTALL/config/git.sh
-#source $XAVECORP_INSTALL/config/mimetypes.sh
+source $XAVECORP_INSTALL/config/mimetypes.sh
 #source $XAVECORP_INSTALL/config/hardware/nvidia.sh
 
 # Login
