@@ -1,0 +1,18 @@
+#!/bin/bash
+
+STATUS="$(systemctl is-active openvpn-client@testamento.service)"
+if [ "${STATUS}" = "inactive" ]; then
+  if [ $1 = 'toggle' ]; then
+    systemctl start openvpn-client@testamento.service
+    text="{\"text\":\"󱠽 \",\"class\":\"enabled\"}"
+  fi
+  text="{\"text\":\"󱠾\",\"tooltip\":\"testamento closed\"}"
+else
+  if [ $1 = 'toggle' ]; then
+    systemctl stop openvpn-client@testamento.service
+    text="{\"text\":\"󱠾\",\"tooltip\":\"testamento closed\"}"
+  fi
+  ADDR="$(ip -br addr show dev tun0 | awk '{ print $3 }')"
+  text="{\"text\":\"󱠽 \",\"class\":\"enabled\",\"tooltip\":\"$ADDR\"}"
+fi
+echo $text

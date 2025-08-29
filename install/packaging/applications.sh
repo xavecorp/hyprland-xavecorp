@@ -10,5 +10,4 @@ yay -S --noconfirm \
     yubico-authenticator-bin
 
 # Activate Yubico Authenticator
-sudo pacman -R yubikey-personalization
 sudo systemctl start pcscd.service
