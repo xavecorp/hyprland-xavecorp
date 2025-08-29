@@ -67,4 +67,4 @@ echo
 echo "You're done! So we're ready to reboot now..." | tte --frame-rate 640 wipe
 
 sleep 5
-reboot
+#reboot
