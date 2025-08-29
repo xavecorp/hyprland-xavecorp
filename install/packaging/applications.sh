@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo pacman -S --noconfirm --needed \
+yay -S --nocleanmenu --nodiffmenu \
     brave-bin \
     proton-mail-bin \
     visual-studio-code-bin \
