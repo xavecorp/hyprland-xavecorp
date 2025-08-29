@@ -1,12 +1,13 @@
 #!/bin/bash
 
 sudo pacman -S --noconfirm --needed \
-  1password-bin \
+  1password \
   1password-cli \
   7zip \
   kitty \
   zsh \
-  zsh-completion \
+  zsh-completions \
+  zsh-syntax-highlighting \
   avahi \
   bash-completion \
   bat \
