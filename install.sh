@@ -36,7 +36,7 @@ source $XAVECORP_INSTALL/config/timezones.sh
 source $XAVECORP_INSTALL/config/increase-sudo-tries.sh
 source $XAVECORP_INSTALL/config/increase-lockout-limit.sh
 source $XAVECORP_INSTALL/config/ssh-flakiness.sh
-#source $XAVECORP_INSTALL/config/detect-keyboard-layout.sh
+source $XAVECORP_INSTALL/config/detect-keyboard-layout.sh
 #source $XAVECORP_INSTALL/config/xcompose.sh
 #source $XAVECORP_INSTALL/config/mise-ruby.sh
 #source $XAVECORP_INSTALL/config/docker.sh
