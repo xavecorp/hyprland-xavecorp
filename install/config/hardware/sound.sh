@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install Pipewire
-sudo pacman -S \
+sudo pacman -S --noconfirm --needed \
     pipewire-alsa \
     pipewire-pulse \
     alsa-card-profiles \
