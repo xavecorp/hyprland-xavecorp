@@ -49,6 +49,7 @@ source $XAVECORP_INSTALL/config/hardware/bluetooth.sh
 source $XAVECORP_INSTALL/config/hardware/printer.sh
 source $XAVECORP_INSTALL/config/hardware/usb-autosuspend.sh
 source $XAVECORP_INSTALL/config/hardware/ignore-power-button.sh
+source $XAVECORP_INSTALL/config/hardware/sound.sh
 
 #source $XAVECORP_INSTALL/config/branding.sh
 #source $XAVECORP_INSTALL/config/git.sh
