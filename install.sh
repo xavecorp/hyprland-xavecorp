@@ -71,4 +71,5 @@ echo
 echo "You're done! So we're ready to reboot now..." | tte --frame-rate 640 wipe
 
 sleep 5
-systemctl reboot
+#systemctl reboot
+uwsm stop
