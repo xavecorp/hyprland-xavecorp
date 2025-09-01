@@ -31,7 +31,7 @@
 
     "reload_style_on_change": true,
     "custom/logo": {
-        "format": "󰊠",
+        "format": "\uf303",
         "on-click": "xavecorp-menu",
         "tooltip-format": "Xavecorp Menu\n\nSuper + Alt + Space"
     },
