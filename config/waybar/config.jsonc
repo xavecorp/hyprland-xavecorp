@@ -36,7 +36,7 @@
         "tooltip-format": "Xavecorp Menu\n\nSuper + Alt + Space"
     },
     "clock": {
-        "format": "{:%I:%M:%S %p}",
+        "format": "{:%H:%M:%S}",
         "interval": 1,
         "tooltip-format": "\n<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "calendar-weeks-pos": "right",
@@ -47,8 +47,6 @@
     },
     "hyprland/language": {
         "format": "Lang: {long}",
-        "format-en": "AMERICA, HELL YEAH!",
-        "format-tr": "As bayrakları",
         "keyboard-name": "at-translated-set-2-keyboard"
     },
     "disk": {
@@ -112,13 +110,7 @@
         }
     },
     "hyprland/window": {
-        "format": "( {class} )",
-        "rewrite": {
-            "(.*) - Mozilla Firefox": "🌎 $1",
-            "org.telegram.desktop": "> [$1]",
-            "org.gnome.Nautilus": "> [$1]",
-            "(.*) - zsh": "> [$1]"
-        }
+        "format": "{}"
     },
     "tray": {
         "icon-size": 14,
