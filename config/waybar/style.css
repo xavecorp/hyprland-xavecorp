@@ -96,6 +96,9 @@ window#waybar {
   animation-direction: alternate;
 }
 
+#workspaces .workspace-icon {
+  font-size: 16px;
+}
 
 @keyframes blink {
   to {
