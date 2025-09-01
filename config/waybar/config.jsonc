@@ -16,7 +16,7 @@
         "mpd"
     ],
     "modules-right": [
-        "hyprland/window",
+        "wlr/taskbar",
         "tray",
         "custom/updates",
         "custom/clipboard",
@@ -108,9 +108,6 @@
             "4": [],
             "5": []
         }
-    },
-    "hyprland/window": {
-        "format": "{}"
     },
     "tray": {
         "icon-size": 14,
