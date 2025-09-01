@@ -1,63 +1,104 @@
 @import "../xavecorp/current/theme/waybar.css";
 
 * {
-  background-color: @background;
-  color: @foreground;
-
   border: none;
-  border-radius: 0;
-  min-height: 0;
-  font-family: CaskaydiaMono Nerd Font;
-  font-size: 12px;
+  font-size: 14px;
+  font-family: "JetBrainsMono Nerd Font,JetBrainsMono NF";
+  min-height: 25px;
 }
 
-.modules-left {
-  margin-left: 8px;
+window#waybar {
+  background: transparent;
+  margin: 5px;
+}
+
+#custom-logo {
+  padding: 0 10px;
 }
 
 .modules-right {
-  margin-right: 8px;
+  padding-left: 5px;
+  border-radius: 15px 0 0 15px;
+  margin-top: 2px;
+  background: @background;
 }
 
-#workspaces button {
-  all: initial;
-  padding: 0 6px;
-  margin: 0 1.5px;
-  min-width: 9px;
+.modules-center {
+  padding: 0 15px;
+  margin-top: 2px;
+  border-radius: 15px 15px 15px 15px;
+  background: @background;
 }
 
-#workspaces button.empty {
-  opacity: 0.5;
+.modules-left {
+  border-radius: 0 15px 15px 0;
+  margin-top: 2px;
+  background: @background;
 }
 
-#tray,
-#cpu,
 #battery,
-#network,
+#custom-clipboard,
+#custom-colorpicker,
+#custom-powerDraw,
 #bluetooth,
 #pulseaudio,
-#custom-xavecorp,
-#custom-update {
-  min-width: 12px;
-  margin: 0 7.5px;
+#network,
+#disk,
+#memory,
+#backlight,
+#cpu,
+#temperature,
+#custom-weather,
+#idle_inhibitor,
+#jack,
+#tray,
+#window,
+#workspaces,
+#clock {
+  padding: 0 5px;
 }
 
-#custom-expand-icon {
-  margin-right: 7px;
+#pulseaudio {
+  padding-top: 3px;
 }
 
-tooltip {
-  padding: 2px;
+#temperature.critical,
+#pulseaudio.muted {
+  color: #FF0000;
+  padding-top: 0;
 }
 
-#custom-update {
-  font-size: 10px;
-}
+
+
 
 #clock {
-  margin-left: 8.75px;
+  color: #5fd1fa;
 }
 
-.hidden {
-  opacity: 0;
+#battery.charging {
+  color: #ffffff;
+  background-color: #26A65B;
+}
+
+#battery.warning:not(.charging) {
+  background-color: #ffbe61;
+  color: black;
+}
+
+#battery.critical:not(.charging) {
+  background-color: #f53c3c;
+  color: #ffffff;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+
+@keyframes blink {
+  to {
+    background-color: #ffffff;
+    color: @background;
+  }
 }
