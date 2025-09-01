@@ -69,9 +69,6 @@ window#waybar {
   padding-top: 0;
 }
 
-
-
-
 #clock {
   color: #5fd1fa;
 }
@@ -94,10 +91,6 @@ window#waybar {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-}
-
-#workspaces .workspace-icon {
-  font-size: 16px;
 }
 
 @keyframes blink {

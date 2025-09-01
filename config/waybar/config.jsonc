@@ -89,7 +89,7 @@
     },
     "hyprland/workspaces": {
         "on-click": "activate",
-        "format": "<span class='workspace-icon'>{icon}</span>",
+        "format": "{icon}",
         "format-icons": {
             "default": "",
             "1": "1",
@@ -253,8 +253,8 @@
             "active": "󱜠",
             "notactive": "󱜡"
         },
-        "exec": "waybar-hotspot -a watch",
-        "on-click": "waybar-hotspot -a toggle",
+        "exec": "xavecorp-waybar-hotspot -a watch",
+        "on-click": "xavecorp-waybar-hotspot -a toggle",
     },
     "network": {
         "format-wifi": " ",
