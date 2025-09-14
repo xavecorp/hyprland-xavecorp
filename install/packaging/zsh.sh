@@ -15,6 +15,7 @@ zsh_paths=(
 for zsh_path in "${zsh_paths[@]}"; do [[ -d $zsh_path ]] && Zsh_Path=$zsh_path && break; done
 
 # set variables
+XAVECORP_INSTALL=~/.local/share/xavecorp/install
 Zsh_rc="${ZDOTDIR:-$HOME}/.zshenv"
 Zsh_Path="${Zsh_Path:-$HOME/.oh-my-zsh}"
 Zsh_Plugins="$Zsh_Path/custom/plugins"
@@ -35,7 +36,7 @@ while read -r r_plugin; do
     else
         [ -z "${z_plugin}" ] || w_plugin+=" ${z_plugin}"
     fi
-done < <(cut -d '#' -f 1 "${scrDir}/zsh.lst" | sed 's/ //g')
+done < <(cut -d '#' -f 1 "${XAVECORP_INSTALL}/packaging/zsh.lst" | sed 's/ //g')
 
 # update plugin array in zshrc
 sed -i "/^hyde_plugins=/c\hyde_plugins=(${w_plugin} )${Fix_Completion}" "${Zsh_rc}"
