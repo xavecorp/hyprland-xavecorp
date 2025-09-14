@@ -39,3 +39,8 @@ done < <(cut -d '#' -f 1 "${scrDir}/zsh.lst" | sed 's/ //g')
 
 # update plugin array in zshrc
 sed -i "/^hyde_plugins=/c\hyde_plugins=(${w_plugin} )${Fix_Completion}" "${Zsh_rc}"
+
+# theme
+sed -i "/^ZSH_THEME=/c\ZSH_THEME=\"agnoster\"" "$HOME/.zshrc"
+
+chsh -s "$(which zsh)"
