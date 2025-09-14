@@ -26,9 +26,6 @@ sudo pacman -S --noconfirm --needed \
   evince \
   eza \
   fastfetch \
-  fcitx5 \
-  fcitx5-gtk \
-  fcitx5-qt \
   fd \
   ffmpeg \
   ffmpegthumbnailer \
