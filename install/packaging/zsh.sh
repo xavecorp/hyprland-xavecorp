@@ -38,5 +38,4 @@ while read -r r_plugin; do
 done < <(cut -d '#' -f 1 "${scrDir}/zsh.lst" | sed 's/ //g')
 
 # update plugin array in zshrc
-print_log -sec "SHELL" -stat "installing" "plugins (${w_plugin} )"
 sed -i "/^hyde_plugins=/c\hyde_plugins=(${w_plugin} )${Fix_Completion}" "${Zsh_rc}"
