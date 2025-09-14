@@ -44,4 +44,4 @@ sed -i "/^hyde_plugins=/c\hyde_plugins=(${w_plugin} )${Fix_Completion}" "${Zsh_r
 # theme
 sed -i "/^ZSH_THEME=/c\ZSH_THEME=\"agnoster\"" "$HOME/.zshrc"
 
-chsh -s "$(which zsh)"
+sudo chsh -s "$(which zsh)"
